@@ -20,3 +20,9 @@ root.addEventListener('keydown', (event) => {
     console.log(eval(input.value))
   }
 })
+
+document.getElementById('moving').addEventListener('mouseover', () => {
+  const top = Math.random() * 500
+  const left = Math.random() * 500
+  document.getElementById('moving').style = `position: absolute; top: ${top}px; left: ${left}px;`
+})
